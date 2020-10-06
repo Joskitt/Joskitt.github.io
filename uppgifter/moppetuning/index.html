@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pro Line - Bootstrap v4.1.3 Template</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="css/tooplate-style.css" />
+    <!--
+Tooplate 2111 Pro Line
+http://www.tooplate.com/view/2111-pro-line
+-->
+  </head>
+
+  <body>
+    <!-- page header -->
+    <div class="container" id="home"></div>
+      <div class="col-12 text-center">
+        <div class="tm-page-header">
+          <img src="https://media3.giphy.com/media/opBtM3IV8sIz1OrbeW/giphy.gif" alt="" width="100" height="100">
+          <h1 class="d-inline-block text-uppercase">MopoTuningJeppis</h1>
+        </div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="tm-nav-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#tmMainNav"
+                aria-controls="tmMainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="tmMainNav">
+                <ul class="navbar-nav mx-auto tm-navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#home"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#features">Moped</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#activities">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#company">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link external" href="https://www.instagram.com/mopotuningjeppiss">IG Page</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Banner -->
+    <section class="tm-banner-section" id="tmVideoSection">
+      <div class="container tm-banner-text-container">
+        <div class="row">
+          <div class="col-12">
+            <header>
+              <h2 class="tm-banner-title">Mopotuningjeppis</h2>
+              <p class="mx-auto tm-banner-subtitle">
+                A motorcycle/moped instagram page from Finland
+              </p>
+            </header>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video -->
+      <video id="hero-vid" autoplay="" loop="" muted>
+        <source src="videos/city-night-blur-01.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <!-- Features -->
+    <div class="container tm-features-section" id="features">
+      <div class="row tm-features-row">
+        <section class="col-md-6 col-sm-12 tm-feature-block">
+          <header class="tm-feature-header">
+            <h3 class="tm-feature-h">My moped</h3>
+          </header>
+          <img src="https://i.gyazo.com/b19c5af2b411ae311540b3a4822e8c9b.png" alt="" width="480" height="300">
+        </section>
+        <section class="col-md-6 col-sm-12 tm-feature-block">
+          <header class="tm-feature-header">
+            <i class="fas fa-5x fa-atom tm-feature-icon"></i>
+            <h3 class="tm-feature-h">Story</h3>
+          </header>
+          <p>
+            I bought my moped a while ago and it has gone trough alot. <br>
+            the cylinder has been swappen like 7 times ive had everything between 50 and 80cc on it. right now it's a tec-x 50cc on
+          </p>
+          <p>
+            It's a yamaha dt 05 and the engine has been apart several times.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Activities -->
+    <div class="container" id="activities">
+      <div class="row">
+        <div class="col-12">
+          <div class="tm-parallax">
+            <header class="tm-parallax-header">
+              <h2 class="">Products</h2>
+            </header>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="tm-activity-block">
+            <div class="tm-activity-img-container">
+              <img src="data:image/jpeg;base64,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" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">T-Shirts</h3>
+              <p>
+                I'm planning on releasing T-Shirts very shortly
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block mr-lg-0 ml-lg-auto">
+            <div class="tm-activity-img-container">
+              <img src="https://assets.oakley.com/is/image/OakleyAFA/190645533824_tech-cap_blackout_main_001.png?impolicy=OO_thumb" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Caps</h3>
+              <p>
+                Coming Soon!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block">
+            <div class="tm-activity-img-container">
+              <img src="https://img.secure.cdn2.wmgecom.com/media/catalog/product/cache/1841/small_image/180x180/9df78eab33525d08d6e5fb8d27136e95/j/a/jacob_banks_hoodie_-_jb_village_as_told_by_pullover_hoodie_front_.jpg" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Hoodies</h3>
+              <p>
+                Coming Soon!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-activity-block mr-lg-0 ml-lg-auto">
+            <div class="tm-activity-img-container">
+              <img src="https://en.mimoto.fi/tuotekuvat/180x180/308-0200-20.jpg" alt="Image" class="tm-activity-img" />
+            </div>
+            <div class="tm-activity-block-text">
+              <h3 class="tm-text-blue">Moped parts</h3>
+              <p>
+                Coming Soon!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container tm-company-section" id="company">
+      <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-12 tm-company-left">
+          <div class="tm-company-about">
+            <div class="tm-company-img-container">
+              <img src="https://i.gyazo.com/b56390fb92978c898e9a6f7aacfb58e4.png" alt="Image" />
+            </div>
+            <div class="tm-company-about-text">
+              <header>
+                <h2 class="tm-company-about-header">About</h2>
+              </header>
+              <p>
+                I am a 16 year old boy from finland who enjoys bikes and riding.
+              </p>
+              <p class="mb-4">
+                And i am planning on starting my own little company where i sell moped and tuning parts 
+              </p>
+              <a href="#" class="btn tm-btn tm-float-right">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xl-9 col-lg-4 col-md-12 tm-company-right  ml-lg-auto mr-lg-0"
+        >
+          <div class="tm-company-right-inner">
+            <ul class="nav nav-tabs" id="tmCompanyTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-nav-link-border-right active"
+                  id="vision-tab"
+                  data-toggle="tab"
+                  href="#vision"
+                  role="tab"
+                  aria-controls="vision"
+                  aria-selected="true"
+                  >Vision</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-no-border-right"
+                  id="mission-tab"
+                  data-toggle="tab"
+                  href="#mission"
+                  role="tab"
+                  aria-controls="mission"
+                  aria-selected="false"
+                  >Mission</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="tmTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="vision"
+                role="tabpanel"
+                aria-labelledby="vision-tab"
+              >
+                <p>
+                 I want to legalize wheelies, i have ran from the police many times
+                </p>
+                <p>
+                  I have many friends and supporters around finland
+                </p>
+                <p>
+                  if you think the same please follow my instagram
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="mission"
+                role="tabpanel"
+                aria-labelledby="mission-tab"
+              >
+                <p>
+                  My goal is to make police care less about innocent moped boys in my country
+                </p>
+                <p>
+                  right now all the police care about here are mopeds
+                </p>
+                <p>
+                  And that's not right i think 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="container tm-contact-section" id="contact">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 col-md-12 tm-contact-left">
+          <div class="tm-contact-form-container ml-auto mr-0">
+            <header>
+              <h2 class="tm-contact-header">Contact Us</h2>
+            </header>
+            <form action="index.html" class="tm-contact-form" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="contact_name"
+                  name="contact_name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="contact_email"
+                  name="contact_email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  rows="5"
+                  id="contact_message"
+                  name="contact_message"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="tm-text-right">
+                <button type="submit" class="btn tm-btn tm-btn-big">
+                  Send It
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6 col-md-12 tm-contact-right">
+          <div class="tm-contact-figure-block">
+            <figure class="d-inline-block">
+              <img src="img/img-06.jpg" alt="Image" class="img-fluid" />
+              <figcaption class="tm-contact-figcaption">
+                
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container tm-footer">
+      <div class="row tm-footer-row">
+        <p class="col-md-10 col-sm-12 mb-0">
+          Copyright &copy; 2020 Mopotuningjeppis - Design:
+          <a rel="nofollow" href="https://www.instagram.com/ackejoskitt" class="tm-footer-link">Acke</a>
+        </p>
+        <div class="col-md-2 col-sm-12 scrolltop">
+          <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!-- Single Page Nav plugin works with this version of jQuery -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      /**
+       * detect IE
+       * returns version of IE or false, if browser is not Internet Explorer
+       */
+      function detectIE() {
+        var ua = window.navigator.userAgent;
+
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0) {
+          // IE 10 or older => return version number
+          return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)), 10);
+        }
+
+        var trident = ua.indexOf("Trident/");
+        if (trident > 0) {
+          // IE 11 => return version number
+          var rv = ua.indexOf("rv:");
+          return parseInt(ua.substring(rv + 3, ua.indexOf(".", rv)), 10);
+        }
+
+        // var edge = ua.indexOf('Edge/');
+        // if (edge > 0) {
+        //     // Edge (IE 12+) => return version number
+        //     return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+        // }
+
+        // other browser
+        return false;
+      }
+
+      function setVideoHeight() {
+        const videoRatio = 1920 / 1080;
+        const minVideoWidth = 400 * videoRatio;
+        let secWidth = 0,
+          secHeight = 0;
+
+        secWidth = videoSec.width();
+        secHeight = videoSec.height();
+
+        secHeight = secWidth / 2.13;
+
+        if (secHeight > 600) {
+          secHeight = 600;
+        } else if (secHeight < 400) {
+          secHeight = 400;
+        }
+
+        if (secWidth > minVideoWidth) {
+          $("video").width(secWidth);
+        } else {
+          $("video").width(minVideoWidth);
+        }
+
+        videoSec.height(secHeight);
+      }
+
+      // Parallax function
+      // https://codepen.io/roborich/pen/wpAsm
+      var background_image_parallax = function($object, multiplier) {
+        multiplier = typeof multiplier !== "undefined" ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({ "background-attatchment": "fixed" });
+        $(window).scroll(function() {
+          var from_top = $doc.scrollTop(),
+            bg_css = "center " + multiplier * from_top + "px";
+          $object.css({ "background-position": bg_css });
+        });
+      };
+
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $(".scrolltop:hidden")
+            .stop(true, true)
+            .fadeIn();
+        } else {
+          $(".scrolltop")
+            .stop(true, true)
+            .fadeOut();
+        }
+
+        // Make sticky header
+        if ($(this).scrollTop() > 158) {
+          $(".tm-nav-section").addClass("sticky");
+        } else {
+          $(".tm-nav-section").removeClass("sticky");
+        }
+      });
+
+      let videoSec;
+
+      $(function() {
+        if (detectIE()) {
+          alert(
+            "Please use the latest version of Edge, Chrome, or Firefox for best browsing experience."
+          );
+        }
+
+        const mainNav = $("#tmMainNav");
+        mainNav.singlePageNav({
+          filter: ":not(.external)",
+          offset: $(".tm-nav-section").outerHeight(),
+          updateHash: true,
+          beforeStart: function() {
+            mainNav.removeClass("show");
+          }
+        });
+
+        videoSec = $("#tmVideoSection");
+
+        // Adjust height of video when window is resized
+        $(window).resize(function() {
+          setVideoHeight();
+        });
+
+        setVideoHeight();
+
+        $(window).on("load scroll resize", function() {
+          var scrolled = $(this).scrollTop();
+          var vidHeight = $("#hero-vid").height();
+          var offset = vidHeight * 0.6;
+          var scrollSpeed = 0.25;
+          var windowWidth = window.innerWidth;
+
+          if (windowWidth < 768) {
+            scrollSpeed = 0.1;
+            offset = vidHeight * 0.5;
+          }
+
+          $("#hero-vid").css(
+            "transform",
+            "translate3d(-50%, " + -(offset + scrolled * scrollSpeed) + "px, 0)"
+          ); // parallax (25% scroll rate)
+        });
+
+        // Parallax image background
+        background_image_parallax($(".tm-parallax"), 0.4);
+
+        // Back to top
+        $(".scroll").click(function() {
+          $("html,body").animate(
+            { scrollTop: $("#home").offset().top },
+            "1000"
+          );
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
