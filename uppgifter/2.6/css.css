@@ -1,0 +1,15 @@
+h1 {
+    padding: 0.5cm;
+    color: white;
+    background-color: black;
+}
+p {
+    margin-top: -0.6cm;
+    color: black;
+    background-color:lightgray
+}
+h3 {
+    padding: 0.5cm;
+    color: white;
+    background-color: gray;
+}
