@@ -1,0 +1,18 @@
+.box1 {
+    
+padding: 0.5cm;
+color:white;
+background-color: red;
+}
+.box2 {
+    
+    margin: 1cm;
+    color:white;
+    background-color:green;
+    }
+    .box3 {
+        width: 5cm;
+        height: 3cm;
+        color:white;
+        background-color: blue;
+    }
