@@ -1,0 +1,53 @@
+.parent {
+    width: 100%;
+    height: 33.33333333333333vh;
+}
+.parent1 {
+width: 100%;
+height: 33.33333333333333vh;
+display: flex;
+}
+.parent2 {
+width: 100%;
+height: 33.33333333333333vh;
+display: flex;
+}
+.parent3 {
+width: 100%;
+height: 33.33333333333333vh;
+display: flex;
+}
+.p1 {
+height: 100%;
+width: 25%;
+}
+.p2 {
+height: 100%;
+width: 25%;
+background-color: blue;
+}
+.p3 {
+height: 100%;
+width: 50%;
+}
+body {
+    margin: 0cm;
+}
+.p20 {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.p31 {
+height: 100%;
+width: 25%;
+}
+.p32 {
+height: 100%;
+width: 25%;
+background-color: blue;
+}
+.p33 {
+height: 100%;
+width: 50%;
+}
