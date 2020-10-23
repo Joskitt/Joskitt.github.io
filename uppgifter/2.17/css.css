@@ -1,0 +1,23 @@
+a.button {
+    display: inline-block;
+    border: 2px red;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border-style: solid;
+    color: red;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+a.button:hover {
+    display: inline-block;
+    border: 2px red;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border-style: solid;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: red;
+}
