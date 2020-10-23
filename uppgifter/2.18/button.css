@@ -1,0 +1,84 @@
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+a.button:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: black;
+}
+a.button.--red {
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    border: 1px red solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+a.button.--red:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px red solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: red;
+}
+a.button.--green {
+    display: inline-block;
+    text-decoration: none;
+    color: green;
+    border: 1px green solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+a.button.--green:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px green solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: green;
+}
+a.button.--blue {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border: 1px blue solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+a.button.--blue:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px blue solid;
+    border-radius: 3px;
+    padding: 8px 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background-color: blue;
+}
