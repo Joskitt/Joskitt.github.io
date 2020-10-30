@@ -1,0 +1,77 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+}
+.box1 {
+    width: 700px;
+    height: 250px;
+    border: white 10px;
+    border-radius: 10px;
+    margin-top: 1%;
+    background-color: white;
+    box-shadow: black 2px 2px 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    margin: 0cm;
+}
+img.dog {
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.dogtext {
+    margin-left: 33%;
+    margin-top: -13%;
+    font-family: sans-serif;
+}
+h1 {
+    font-family: sans-serif;
+    margin-top: -27%;
+    margin-left: 30.1%;
+}
+.box2 {
+    width: 700px;
+    height: 250px;
+    border: white 10px;
+    border-radius: 10px;
+    margin-top: 1%;
+    background-color: white;
+    box-shadow: black 2px 2px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17%;
+}
+img.cat {
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.cattext {
+    margin-left: 33%;
+    margin-top: -20%;
+    font-family: sans-serif;
+}
+.box3 {
+    width: 700px;
+    height: 250px;
+    border: white 10px;
+    border-radius: 10px;
+    margin-top: 1%;
+    background-color: white;
+    box-shadow: black 2px 2px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17%;
+    margin-bottom: 3%;
+}
+img.cow {
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.cowtext {
+    margin-left: 33%;
+    font-family: sans-serif;
+}
