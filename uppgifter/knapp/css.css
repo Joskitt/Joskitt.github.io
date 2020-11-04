@@ -1,0 +1,102 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    cursor: pointer;
+}
+.switch {
+    width: 180px;
+    height: 50px;
+    position: relative;
+}
+.switch label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #63110c;
+    border-radius: 40px;
+    box-shadow:
+        inset 0 3px 8px 1px rgba(250, 0, 0, 0.2),
+        0 1px 0 rgb(0, 0, 0);
+}
+.switch label:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8px; right: -8px; bottom: -8px; left: -8px;
+    border-radius: inherit;
+    background: rgb(207, 38, 38)0); /* Fallback */
+    background: linear-gradient(#fa4444, #800e0e);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3),
+        0 1px 1px rgba(0,0,0,0.25);
+}
+.switch label i {
+    display: block;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: inherit;
+    background: #e40000; /* Fallback */
+    background: linear-gradient(#ff1a1a, #ff0000);
+    box-shadow:
+        inset 0 1px 0 rgb(255, 0, 0),
+        0 0 8px rgb(71, 0, 0),
+        0 5px 5px rgba(255, 0, 0, 0.2);
+}
+.switch label i:after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 70%;
+    height: 50%;
+    background: #f55004; /* Fallback */
+    background: linear-gradient(#9b1414, #831212);
+    border-radius: inherit;
+}
+.switch label i:before {
+    content: "off";
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    margin-top: -12px;
+    color: rgb(56, 12, 12)); /* Fallback */
+    color: rgba(255,0,0,0);
+    font-style: normal;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+}
+.switch input:checked ~ label { /* Background */
+    background: #535050;
+}
+
+.switch input:checked ~ label i { /* Toggle */
+    left: auto;
+    right: -1%;
+}
+
+.switch input:checked ~ label i:before { /* On/off */
+    content: "on";
+    right: 115%;
+    color: #ff0000;
+    text-shadow: 0 1px 0 #ff0000, 0 -1px 0 #ff0000;
+}
+body {
+    margin: 0%;
+}
