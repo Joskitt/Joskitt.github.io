@@ -25,9 +25,7 @@
     position: relative;
     background: #63110c;
     border-radius: 40px;
-    box-shadow:
-        inset 0 3px 8px 1px rgba(250, 0, 0, 0.2),
-        0 1px 0 rgb(0, 0, 0);
+
 }
 .switch label:after {
     content: "";
@@ -36,9 +34,7 @@
     top: -8px; right: -8px; bottom: -8px; left: -8px;
     border-radius: inherit;
     background: rgb(207, 38, 38)0); /* Fallback */
-    background: linear-gradient(#fa4444, #800e0e);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3),
-        0 1px 1px rgba(0,0,0,0.25);
+    background: linear-gradient(#fa4444, #fa4444);
 }
 .switch label i {
     display: block;
@@ -49,12 +45,9 @@
     top: 0;
     z-index: 2;
     border-radius: inherit;
-    background: #e40000; /* Fallback */
-    background: linear-gradient(#ff1a1a, #ff0000);
-    box-shadow:
-        inset 0 1px 0 rgb(255, 0, 0),
-        0 0 8px rgb(71, 0, 0),
-        0 5px 5px rgba(255, 0, 0, 0.2);
+    background: #d30a0a; /* Fallback */
+    background: linear-gradient(#ffb7b7, #ffbbbb);
+
 }
 .switch label i:after {
     content: "";
@@ -63,7 +56,7 @@
     top: 25%;
     width: 70%;
     height: 50%;
-    background: #f55004; /* Fallback */
+    background: #9b4117; /* Fallback */
     background: linear-gradient(#9b1414, #831212);
     border-radius: inherit;
 }
