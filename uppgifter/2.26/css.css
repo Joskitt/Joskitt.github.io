@@ -1,0 +1,16 @@
+@media screen and (min-width: 901px) {
+    body {
+        background-color: black;
+    }
+    h1 {
+        color: white;
+    }
+}
+@media screen and (max-width: 900px) {
+    body {
+        background-color: red;
+    }
+    h1 {
+        color: white;
+    }
+}
