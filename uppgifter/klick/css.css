@@ -60,7 +60,6 @@ button:after {
   figure:nth-child(6) { animation-duration:2ms; } 
   figure:nth-child(7) { animation-duration:1ms; } 
   figure:nth-child(8) { animation-duration:0.001ms; } 
-}
 embed {
     opacity: 0%;
 }
