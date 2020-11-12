@@ -1,0 +1,46 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 900px) {
+    .desktop {
+        display: block;
+        font-size: x-large;
+        font-family: sans-serif;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+        font-size: x-large;
+        font-family: sans-serif;
+    }
+    .mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        font-size: x-large;
+        font-family: sans-serif;
+        display: block;
+    }
+}
