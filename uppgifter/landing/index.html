@@ -1,22 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body {
+      position: relative; 
+    }
+    #section1 {}
+    #section2 {}
+    #section3 {}
+    </style>
     <link rel="stylesheet" href="css.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RTX 3070</title>
 </head>
-<body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#specs">Specs</a>
-        <a href="#buy">Buy</a>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Nvidia</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section1">Home</a></li>
+              <li><a href="#section2">Info & Specs</a></li>
+              <li><a href="#section3">Buy</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    <div class="parent">
+    </nav>    
+    
+    <div id="section1" class="parent">
           <h1 class="nvidia">Nvidia GeForce RTX 2070</h1>
           <div class="box1">
-              <img class="rtx" src="rtx.jpg" width="40%" height="50%" alt=""> 
+              <h2>Nvidia RTX 2070</h2>
+              <h3 class="rtxx">The powerful new GeForce ® RTX 2070 leverages state-of-the-art NVIDIA Turing ™ architecture to help you experience the latest games in incredible vividness and performance. This is the future of gaming. Get Game Ready with RTX.</h3>
+          </div>
+          <div class="news">
+              <h1 class="news">News</h1>
+              <h3>The RTX 2070 is the graphics card for gamers that wants performance in a mid spec pc build</h3>
+          </div>
+          <div id="section2" class="specs">
+              <h2>Specs</h2>
+              <table>
+                  <tr>
+                    <td class="grå">Graphics processor architecture</td>
+                      <td class="grön">Turing</td>
+                  </tr>
+                  <tr>
+                    <td class="grå">RTX-OPS</td>
+                      <td class="grön">42T</td>
+                  </tr>
+                  <tr>
+                    <td class="grå">Reinforced clock frequency</td>
+                      <td class="grön">1620 MHz</td>
+                  </tr>
+                  <tr>
+                    <td class="grå">Video card memory</td>
+                      <td class="grön">8 GB GDDR6</td>
+                  </tr>
+                  <tr>
+                      <td class="grå">Memory speed</td>
+                      <td class="grön">14 Gbps</td>
+                  </tr>
+              </table>
+          </div>
+          <div id="section3" class="buy">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="rtx" src="2070.jpg" width="1000px" height="500px" style="object-fit: cover; border: white 2px solid; border-radius: 5px;">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="rtxx" src="rtx2070.jpg" width="1000px" height="500px" style="object-fit: cover; border: white 2px solid; border-radius: 5px;">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="rtxxx" src="20700.jpg" width="1000px" height="500px" style="object-fit: cover; border: white 2px solid; border-radius: 5px;">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              
+              <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+              <a class="button" href="">Buy Now!</a>
           </div>
     </div>
 </body>
