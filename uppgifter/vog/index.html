@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOG</title>
+</head>
+<body>
+    <div class="tbparent">
+        <img class="logo" src="logo.png" alt="">
+        <nav>
+            <a class="navbar" href="#home">Home</a>
+            <a class="navbar" href="#game">Game1</a>
+            <a class="navbar" href="#art">Artwork</a>
+            <a class="navbar" href="#car">Game2</a>
+        </nav>
+    </div>
+    <div class="parent" id="home">
+        <img class="biglogo" src="logo.png" alt="">
+        <h1 class="quote">Explore Your World</h1>
+        <img class="arrow" src="arrow.png" alt="">
+    </div>
+    <div class="parent2" id="game">
+        <h1 class="cliff">Cliff Hanger</h1>
+        <h2 class="lilcliff">Explore Your World</h2>
+        <h3 class="clifftext">Explore the abstract world <br> by yourself or with your friends</h3>
+        <h1 class="buy">Buy Now!</h1>
+        <div class="buttonp">
+            <a class="b1" href="#">Windows/Mac/Linux</a>
+            <a class="b2" href="#">Nintendo Switch</a>
+        </div>
+        <div class="buttonp2">
+            <a class="b3" href="#">Xbox One</a>
+            <a class="b4" href="#">Playstation 4</a>
+        </div>
+    </div>
+    <div class="parent3" id="art">
+        <h1 class="art">Artwork Showcase</h1>
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="img1.jpg">
+            <img class="mySlides" src="unnamed (1).jpg">
+            <img class="mySlides" src="firewatch_logo.jpg">
+          </div>
+    </div>
+    <div class="parent4" id="car">
+        <h1 class="rc">Night Racer</h1>
+        <div class="imgparent">
+            <img class="bil" src="bil1.jpg" alt="">
+            <img class="bil" src="bil2.jpg" alt="">
+        </div>
+        <a class="android" href="#">Download For Android/IOS</a>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000);
+        }
+        </script>
+</body>
+</html>
