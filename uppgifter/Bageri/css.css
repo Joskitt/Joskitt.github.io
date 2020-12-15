@@ -1,0 +1,128 @@
+body {
+    margin: 0%;
+    background-image: url(bg-om-oss.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tbparent {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.tbparent h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    margin-left: 3%;
+    font-weight: 400;
+}
+.logo {
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+}
+.tbparent img {
+    margin: 7px;
+}
+.tbp2 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset rgb(211, 210, 210) 0px 5px 5px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9rem;
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+}
+a.active {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9rem;
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: rgb(255, 65, 7);
+    border-radius: 3px;
+}
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9rem;
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: rgb(255, 65, 7);
+    border-radius: 3px;
+}
+h1.welcome {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    margin-top: 120px;
+    font-size: 1.7rem;
+}
+h1.anna {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300; 
+    font-size: 3rem;
+    margin-top: -30px;
+    letter-spacing: 2px;
+}
+h1.dot {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: -19px;
+}
+.parent p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    max-width: 400px;
+}
+@media screen and (min-width: 700px) {
+    .tbp2 {
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: -50px;
+        margin-left: 50%;
+        width: 200px;
+    }
+    .tbparent h1 {
+        margin-left: 10%;
+    }
+    .logo {
+        width: 100px;
+        height: 50px;
+        justify-content: center;
+        display: flex;
+        align-self: center;
+        margin-left: 63%;
+    }
+    h1.welcome {
+        margin-top: 200px;
+    }
+}
