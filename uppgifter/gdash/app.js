@@ -23,7 +23,10 @@ createPlatform(635, 370, 40, 40);
 createPlatform(835, 300, 200, 150);
 createPlatform(1235, 300, 200, 150);
 createPlatform(1080, 0, 100, 200);
-createPlatform(1500, 360, 40, 160)
+createPlatform(1500, 360, 40, 160);
+createPlatform(1500, 0, 40, 260);
+createPlatform(1580, 410, 40, 110);
+createPlatform(1580, 0, 40, 310);
 
 requestAnimationFrame(gameLoop);
 
