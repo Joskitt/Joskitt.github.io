@@ -54,6 +54,8 @@ export function drawPlayer(context, camera) {
 function onCollideX(pawn, collisionObject) {
   playerRect.x = -100;
   playerRect.y = 760;
+
+  return false;
 }
 
 function onCollideY(pawn, collisionObject) {
@@ -61,4 +63,6 @@ function onCollideY(pawn, collisionObject) {
     grounded = true;
   }
   vy = 0;
+
+  return true;
 }

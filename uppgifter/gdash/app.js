@@ -18,8 +18,12 @@ const camera = {
 // Skapa spelets level
 createPlatform(200, canvas.height - 40, 500, 40);
 createPlatform(500, 320, 40, 120);
-createPlatform(635, 250, 40, 70);
+createPlatform(635, 240, 40, 70);
 createPlatform(635, 370, 40, 40);
+createPlatform(835, 300, 200, 150);
+createPlatform(1235, 300, 200, 150);
+createPlatform(1080, 0, 100, 200);
+createPlatform(1500, 360, 40, 160)
 
 requestAnimationFrame(gameLoop);
 
