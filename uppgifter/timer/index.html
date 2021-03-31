@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">
+            <h1 id="timer"></h1>
+            <button id="button">Start Timer!</button>
+        </div>
+    </div>
+
+    <script>
+        let buttonElement = document.getElementById("button")
+        let counter = 0;
+        let timer = document.getElementById("timer");
+
+        buttonElement.addEventListener("click", time)
+        buttonElement.addEventListener("click", disable)
+        timer.innerHTML = counter;
+
+        function time() {
+            setInterval(function() { timer.innerHTML = parseFloat(timer.innerHTML) + 1; }, 1000)
+        }
+        function disable() {
+            document.getElementById("button").disabled = true;
+            alert("Timer Started!")
+        }
+    </script>
+</body>
+</html>

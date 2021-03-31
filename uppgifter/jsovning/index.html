@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>övning</title>
+</head>
+<body id="body">
+    <div class="parent">
+        <button id="red-button">Klicka på mig!</button>
+        <button id="blue-button">Klicka på mig!</button>
+        <button id="green-button">Klicka på mig!</button>
+        <button id="purple-button">Klicka på mig!</button>
+    </div>
+
+    <script>
+    let bodyElement = document.getElementById("body");
+    let redButtonElement = document.getElementById("red-button");
+    let blueButtonElement = document.getElementById("blue-button")
+    let greenButtonElement = document.getElementById("green-button")
+    let purpleButtonElement = document.getElementById("purple-button")
+
+    redButtonElement.addEventListener("click", changeBgToRed);
+    blueButtonElement.addEventListener("click", changeBgToBlue)
+    greenButtonElement.addEventListener("click", changeBgToGreen)
+    purpleButtonElement.addEventListener("click", changeBgToPurple)
+
+
+    function changeBgToRed() {
+      bodyElement.style.background = "red";
+    }
+    function changeBgToBlue() {
+      bodyElement.style.background = "blue";
+    }
+    function changeBgToGreen() {
+      bodyElement.style.background = "green";
+    }
+    function changeBgToPurple() {
+        bodyElement.style.background = "purple"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+</head>
+<body>
+    <button id="dice">roll</button>
+    <img id="number" src="" alt="" style="width: 100px; height: 100px;">
+    <script>
+        let dice = document.getElementById("dice");
+        let nummer = document.getElementById("number");
+        
+        dice.addEventListener("click", rng);
+
+        function rng() {
+            let randomNumber = Math.round(Math.random() * (6 - 1) + 1);
+            nummer.src =  "dice-" + randomNumber + ".svg";
+        }
+    
+    </script>
+</body>
+</html>

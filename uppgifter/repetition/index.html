@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hej på dig</title>
+</head>
+<body>
+    <h1 id="text"></h1>
+    <button id="minus">-</button>
+    <button id="plus">+</button>
+    
+    <script>
+        let textElement = document.getElementById("text");
+        let minusElement = document.getElementById("minus");
+        let plusElement = document.getElementById("plus");
+        let count = 1;
+        let nummer = 0;
+        
+        textElement.innerHTML = nummer;
+        minusElement.addEventListener("click", minus);
+        plusElement.addEventListener("click", plus);
+
+        function minus() {
+            count--;
+            textElement.innerHTML = count;
+        }
+        function plus() {
+            count++;
+            textElement.innerHTML = count;
+        }
+    </script>
+</body>
+</html>

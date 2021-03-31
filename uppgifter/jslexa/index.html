@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body id="body">
+    <div class="parent">
+        <h1 id="text">Hej på dig!</h1>
+        <div class="bp1">
+            <button id="storlek1"></button>
+            <button id="storlek2"></button>
+            <button id="storlek3"></button>
+            <button id="storlek4"></button>
+            <button id="storlek5"></button>
+        </div>
+        <div class="bp2">
+            <button id="farg1"></button>
+            <button id="farg2"></button>
+            <button id="farg3"></button>
+            <button id="farg4"></button>
+            <button id="farg5"></button>
+        </div>
+        <div class="bp3">
+            <button id="bg1"></button>
+            <button id="bg2"></button>
+            <button id="bg3"></button>
+            <button id="bg4"></button>
+            <button id="bg5"></button>
+        </div>
+    </div>
+
+    <script>
+        let bodyElement = document.getElementById("body");
+        let storlek1Element = document.getElementById("storlek1");
+        let storlek2Element = document.getElementById("storlek2");
+        let storlek3Element = document.getElementById("storlek3");
+        let storlek4Element = document.getElementById("storlek4");
+        let storlek5Element = document.getElementById("storlek5");
+        let textElement = document.getElementById("text");
+        let farg1Element = document.getElementById("farg1");
+        let farg2Element = document.getElementById("farg2");
+        let farg3Element = document.getElementById("farg3");
+        let farg4Element = document.getElementById("farg4");
+        let farg5Element = document.getElementById("farg5");
+        let bg1Element = document.getElementById("bg1");
+        let bg2Element = document.getElementById("bg2");
+        let bg3Element = document.getElementById("bg3");
+        let bg4Element = document.getElementById("bg4");
+        let bg5Element = document.getElementById("bg5");
+
+        storlek1Element.addEventListener("click", size1);
+        storlek2Element.addEventListener("click", size2);
+        storlek3Element.addEventListener("click", size3);
+        storlek4Element.addEventListener("click", size4);
+        storlek5Element.addEventListener("click", size5);
+        farg1Element.addEventListener("click", color1);
+        farg2Element.addEventListener("click", color2);
+        farg3Element.addEventListener("click", color3);
+        farg4Element.addEventListener("click", color4);
+        farg5Element.addEventListener("click", color5);
+        bg1Element.addEventListener("click", bg1);
+        bg2Element.addEventListener("click", bg2);
+        bg3Element.addEventListener("click", bg3);
+        bg4Element.addEventListener("click", bg4);
+        bg5Element.addEventListener("click", bg5);
+
+            function size1() {
+                textElement.style.fontSize = "1rem";
+            }
+            function size2() {
+                textElement.style.fontSize = "2rem";
+            }
+            function size3() {
+                textElement.style.fontSize = "3rem";
+            }
+            function size4() {
+                textElement.style.fontSize = "4rem";
+            }
+            function size5() {
+                textElement.style.fontSize = "5rem";
+            }
+            function color1() {
+                textElement.style.color = "red";
+            }
+            function color2() {
+                textElement.style.color = "blue";
+            }
+            function color3() {
+                textElement.style.color = "green";
+            }
+            function color4() {
+                textElement.style.color = "pink";
+            }
+            function color5() {
+                textElement.style.color = "cyan";
+            }
+            function bg1() {
+                bodyElement.style.background = "red";
+            }
+            function bg2() {
+                bodyElement.style.background = "cyan";
+            }
+            function bg3() {
+                bodyElement.style.background = "green";
+            }
+            function bg4() {
+                bodyElement.style.background = "gold";
+            }
+            function bg5() {
+                bodyElement.style.background = "yellow";
+            }
+    </script>
+</body>
+</html>

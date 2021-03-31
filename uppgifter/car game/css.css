@@ -1,0 +1,33 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(racetrack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-image: url(racetrack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bil {
+    width: 75px;
+    height: 100px;
+    margin-left: 50%;
+    margin-top: 43%;
+    display: block;
+}
+.animate {
+    animation: up 1s linear;
+}
+@keyframes up {
+    from {
+        margin-top: 43%;
+    }
+    to {
+        margin-top: 20%;
+    }
+
+}
