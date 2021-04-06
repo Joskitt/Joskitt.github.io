@@ -1,37 +1,45 @@
 export function moveCollideX(xDistance, pawn, collisionObjects, collisionCallback) {
   pawn.x += xDistance;
-  for(let i = 0; i < collisionObjects.length; i++) {
-    if(rectOverlaps(pawn, collisionObjects[i])) {
-      
-      if(collisionCallback) {
-        if(collisionCallback(pawn, collisionObjects[i]) === false) {
-          continue;
-        }
-      }
+  for(let k = 0; k < collisionObjects.length; k++) {
+    for(let i = 0; i < collisionObjects[k].length; i++) {
+      const other = collisionObjects[k][i];
 
-      const collisionOffset = pawn.x + pawn.width / 2 < collisionObjects[i].x + collisionObjects[i].width / 2
-        ? pawn.x + pawn.width - collisionObjects[i].x
-        : pawn.x - (collisionObjects[i].x + collisionObjects[i].width)
-      pawn.x -= collisionOffset;
+      if(rectOverlaps(pawn, other)) {
+        
+        if(collisionCallback) {
+          if(collisionCallback(pawn, other) === false) {
+            continue;
+          }
+        }
+
+        const collisionOffset = pawn.x + pawn.width / 2 < other.x + other.width / 2
+          ? pawn.x + pawn.width - other.x
+          : pawn.x - (other.x + other.width)
+        pawn.x -= collisionOffset;
+      }
     }
   }
 }
 
 export function moveCollideY(yDistance, pawn, collisionObjects, collisionCallback) {
   pawn.y += yDistance;
-  for(let i = 0; i < collisionObjects.length; i++) {
-    if(rectOverlaps(pawn, collisionObjects[i])) {
+  for(let k = 0; k < collisionObjects.length; k++) {
+    for(let i = 0; i < collisionObjects[k].length; i++) {
+      const other = collisionObjects[k][i];
+      
+      if(rectOverlaps(pawn, other)) {
 
-      if(collisionCallback) {
-        if(collisionCallback(pawn, collisionObjects[i]) === false) {
-          continue;
+        if(collisionCallback) {
+          if(collisionCallback(pawn, other) === false) {
+            continue;
+          }
         }
-      }
 
-      const collisionOffset = pawn.y + pawn.height / 2 < collisionObjects[i].y + collisionObjects[i].height / 2
-        ? pawn.y + pawn.height - collisionObjects[i].y
-        : pawn.y - (collisionObjects[i].y + collisionObjects[i].height)
-      pawn.y -= collisionOffset;
+        const collisionOffset = pawn.y + pawn.height / 2 < other.y + other.height / 2
+          ? pawn.y + pawn.height - other.y
+          : pawn.y - (other.y + other.height)
+        pawn.y -= collisionOffset;
+      }
     }
   }
 }

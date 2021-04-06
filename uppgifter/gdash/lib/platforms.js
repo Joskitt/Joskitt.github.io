@@ -6,10 +6,12 @@ export function createPlatform(x, y, width, height) {
     y,
     width,
     height,
-    color: 'gray'
+    color: 'white',
+    type: "platform"
   };
   platforms.push(platform);
 }
+
 
 /**
  * @param {CanvasRenderingContext2D} context 

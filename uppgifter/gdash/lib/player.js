@@ -1,9 +1,12 @@
+import { goalRect } from "./goal.js";
 import { getKey, keyCodes } from "./input.js";
 import { moveCollideX, moveCollideY } from "./physics.js";
 import { platforms } from './platforms.js';
+import { spikes } from "./spikes.js";
 
-const gravity = 0.5;
-const speed = 5;
+const gravity = 0.7;
+const speed = 6.5;
+const jumpStrength = -12;
 
 let color = 'lime';
 
@@ -17,10 +20,12 @@ export const playerRect = {
 let vy = 0;
 let grounded = false;
 
+const collideWithObjects = [ platforms, spikes, [ goalRect ] ]
+
 export function updatePlayer() {
 
   if(grounded && getKey(keyCodes.arrowUp)) {
-    vy = -10;
+    vy = jumpStrength;
     grounded = false;
   }
 
@@ -33,8 +38,8 @@ export function updatePlayer() {
   vx += getKey(keyCodes.arrowRight) ? 5 : 0;
 */
 
-  moveCollideX(vx, playerRect, platforms, onCollideX);
-  moveCollideY(vy, playerRect, platforms, onCollideY);
+  moveCollideX(vx, playerRect, collideWithObjects, onCollideX);
+  moveCollideY(vy, playerRect, collideWithObjects, onCollideY);
 
   if(playerRect.y > 450 - playerRect.height) {
     playerRect.y = 450 - playerRect.height;
@@ -52,6 +57,10 @@ export function drawPlayer(context, camera) {
 }
 
 function onCollideX(pawn, collisionObject) {
+  if(collisionObject.type === "goal") {
+    alert("ez4ence");
+    return false;
+  }
   playerRect.x = -100;
   playerRect.y = 760;
 
@@ -59,10 +68,17 @@ function onCollideX(pawn, collisionObject) {
 }
 
 function onCollideY(pawn, collisionObject) {
+  if(collisionObject.type === 'spike') {
+    playerRect.x = -100;
+    playerRect.y = 760;
+    return false;
+  }
   if(vy >= 0) {
     grounded = true;
   }
   vy = 0;
+
+  collisionObject.color = "yellow"
 
   return true;
 }
