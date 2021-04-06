@@ -1,5 +1,9 @@
 export const spikes = [];
 
+export function clearSpikes() {
+    spikes.splice(0, spikes.length)
+}
+
 export function createSpike(x, y, width, height) {
     const spike = {
         x,

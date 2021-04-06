@@ -1,5 +1,6 @@
 import { goalRect } from "./goal.js";
 import { getKey, keyCodes } from "./input.js";
+import { nextLevel } from "./levels.js";
 import { moveCollideX, moveCollideY } from "./physics.js";
 import { platforms } from './platforms.js';
 import { spikes } from "./spikes.js";
@@ -58,7 +59,10 @@ export function drawPlayer(context, camera) {
 
 function onCollideX(pawn, collisionObject) {
   if(collisionObject.type === "goal") {
-    alert("ez4ence");
+    playerRect.x = -100;
+    playerRect.y = 760;
+    alert("next");
+    nextLevel();
     return false;
   }
   playerRect.x = -100;

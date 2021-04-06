@@ -1,5 +1,9 @@
 export const platforms = [];
 
+export function clearPlatforms() {
+  platforms.splice(0, platforms.length)
+}
+
 export function createPlatform(x, y, width, height) {
   const platform = {
     x,
