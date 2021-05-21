@@ -6,7 +6,7 @@ import { platforms } from './platforms.js';
 import { spikes } from "./spikes.js";
 
 const gravity = 0.7;
-const speed = 6.5;
+const speed = 6;
 const jumpStrength = -12;
 
 let color = 'lime';

@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+.topbar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: rgb(36, 36, 36);
+    display: flex;
+}
+
+.logo {
+    margin: -5px 0%;
+    position: absolute;
+}
+
+.linkparent {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto;
+}
+
+.linkparent a {
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.linkparent a:hover {
+    margin: 50px;
+    text-decoration: underline;
+    color: rgb(94, 94, 94);
+    font-size: 1rem;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(mersubg.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.textp {
+    width: 700px;
+    height: 400px;
+    background-color: rgba(104, 104, 104, 0.562);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textp a {
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    padding: 20px;
+    background-color: rgba(44, 44, 44, 0);
+    border-radius: 5px;
+}
+
+.textp a:hover {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: rgba(44, 44, 44, 0.74);
+    border-radius: 5px;
+}
+
+.linkp {
+    width: 700px;
+    height: 170px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

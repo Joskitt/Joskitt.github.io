@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" type="text/css" href="/uppgifter/slider bar/celsius/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="/uppgifter/slider bar/calculator/index.html">
+                    <span class="icon"><i class="fa fa-calculator" aria-hidden="true"></i></span>
+                    <span class="title">Calculator</span>
+                </a>
+            </li>
+            <li>
+                <a href="/uppgifter/slider bar/hpkw/hpkw.html">
+                    <span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                    <span class="title">Hp/Kw Converter</span>
+                </a>
+            </li>
+            <li>
+                <a href="/uppgifter/slider bar/celsius/grader.html">
+                    <span class="icon"><i class="fa fa-sun-o" aria-hidden="true"></i></i></span>
+                    <span class="title">Celcius/fahrenheit converter</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="parent">
+        <h1 style="margin-bottom: 30px;">Celcius/fahrenheit converter</h1>
+        <div class="calcp">
+            <div class="textp">
+                <h1 class="svar" id="svar" type="number"></h1>
+            </div>
+            <div class="childp">
+            <div class="child1">
+            <input type="number" class="hp" id="horsepower" placeholder="Input Celcius">
+            <button type="button" class="horse" id="horse" onclick="getInputValueHp()">Calculate</button>
+            </div>
+            <div class="child2">
+            <input type="number" class="kw" id="kilowatt" placeholder="Input fahrenheit">
+            <button class="kilo" type="button" id="kilo" onclick="getInputValueKw()">Calculate</button>
+            </div>
+            </div>
+            </div>
+    </div>
+</div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+<script src="app.js"></script>
+</body>
+</html>
